@@ -1,0 +1,33 @@
+﻿@model HotelClientMVC.DTOs.ReservationCreateDTO
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Confirmation</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <h1>Reservation Confirmation</h1>
+    <div>
+        <h2>Reservation Successful!</h2>
+        <p>Check-In Date: @Model.CheckInDate.ToString("yyyy-MM-dd")</p>
+        <p>Check-Out Date: @Model.CheckOutDate.ToString("yyyy-MM-dd")</p>
+        <p>Name: @Model.FirstName @Model.LastName</p>
+        <p>Email: @Model.Email</p>
+        <p>Phone: @Model.Phone</p>
+        <p>Country: @Model.Country</p>
+        <p>Date of Birth: @Model.DateOfBirth.ToString("yyyy-MM-dd")</p>
+        @if (!string.IsNullOrEmpty(Model.SpecialRequests))
+        {
+            <p>Special Requests: @Model.SpecialRequests</p>
+        }
+        @if (!string.IsNullOrEmpty(Model.EmergencyContact))
+        {
+            <p>Emergency Contact: @Model.EmergencyContact</p>
+        }
+    </div>
+    <a href="@Url.Action("Room", "Rooms")">Back to Home</a>
+</body>
+</html>

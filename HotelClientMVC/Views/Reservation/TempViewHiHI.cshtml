@@ -1,0 +1,8 @@
+﻿@using HotelClientMVC.DTOs
+@model HotelClientMVC.DTOs.ReservationCreateDTO
+
+@if (TempData["ReservationDetails"] != null)
+{
+	var reservation = (ReservationCreateDTO)TempData["ReservationDetails"];
+
+}

@@ -1,0 +1,22 @@
+﻿@model HotelClientMVC.ViewModels.LoginViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form asp-action="Login" method="post">
+        <div>
+            <label for="usernameOrEmail">Username:</label>
+            <input type="text" id="usernameOrEmail" name="usernameOrEmail" required />
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="Password" id="Password" name="Password" required />
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

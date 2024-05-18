@@ -1,0 +1,110 @@
+﻿@model GenericResponseModel<List<Room>>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rooms</title>
+    <style>
+		/*body {
+			 background-image: url('images/walpaper.jpg');
+             background-repeat:no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+             background-position: 50% 50%;
+            backdrop-filter: blur(5px);
+        }*/
+        .room-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .room-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            max-width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            background-color: #e7edc5;
+        }
+
+            .room-card:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+        .room-image {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .room-details {
+            padding: 10px;
+        }
+
+            .room-details h2 {
+                margin-top: 0;
+            }
+
+            .room-details p {
+                margin-bottom: 5px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Rooms</h1>
+    <div class="search">
+        <form asp-action="FilterRooms" method="GET" asp-controller="Room">
+            <label for="minPrice">Minimum Price:</label>
+            <input type="number" id="minPrice" name="minPrice" min="0">
+
+            <label for="maxPrice">Maximum Price:</label>
+            <input type="number" id="maxPrice" name="maxPrice" min="0">
+
+            <label for="roomType">Room Type:</label>
+            <select id="roomType" name="roomType">
+                <option value="">Any</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Triple">Triple</option>
+                <option value="Quad">Quad</option>
+                <option value="Queen">Queen</option>
+                <option value="King">King</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="room-card-container">
+        @if (Model != null)
+        {
+            if (Model.StatusCode == 200 && Model.Data != null && Model.Data.Count > 0)
+            {
+                @foreach (var room in Model.Data)
+                {
+                    <div class="room-card">
+                        <img src="~/images/room.jpeg" class="room-image" alt="Example Room Image">
+                        <div class="room-details">
+                            <h2>@room.RoomNumber</h2>
+                            <p>Type: @room.RoomType</p>
+                            <p>Price: $@room.Price</p>
+                            <button class="btn-primary" value="room.Id" onclick="location.href='@Url.Action("RoomDetails","Room", new{roomId=room.Id})'">Check availability</button>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>@Model.Message</p>
+            }
+        }
+        else
+        {
+            <p>No response received.</p>
+        }
+    </div>
+</body>
+</html>
