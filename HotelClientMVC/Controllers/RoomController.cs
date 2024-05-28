@@ -1,4 +1,6 @@
-﻿using HotelClientMVC.Models;
+﻿using HotelClientMVC.DTOs;
+using HotelClientMVC.Models;
+using HotelClientMVC.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -7,34 +9,65 @@ namespace HotelClientMVC.Controllers
     public class RoomController : Controller
     {
         string baseUrl = "https://localhost:7169/api/Room/";
+        public readonly HttpClient _httpClient;
+        public readonly TokenService _tokenService;
+        public RoomController(HttpClient httpClient, TokenService tokenService)
+        {
+            _httpClient = httpClient;
+            _tokenService = tokenService;
+        }
         [HttpGet]
         public async Task<IActionResult> Rooms()
-        {
-            GenericResponseModel<List<Room>> rooms = new GenericResponseModel<List<Room>>();
-            using(var client  = new HttpClient())
-            {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage res = await client.GetAsync($"{baseUrl}get-range");/*.Result;*/
-                if(res.IsSuccessStatusCode)
-                {
-                    var roomRes = res.Content.ReadAsStringAsync().Result;
-                    rooms = JsonConvert.DeserializeObject<GenericResponseModel<List<Room>>>(roomRes);
-                }
-                return View("~/Views/Room/Rooms.cshtml",rooms);
+        {//todo butun otaqlari sehifelerde goster pagination u frontda tetbiq etmek olurmuu bu o zaman yoxsa yene api daki get range ye request gondermeliyem fikirlesecem
 
+            var token = HttpContext.Session.GetString("AccessToken");
+
+            if (!string.IsNullOrEmpty(token))
+            {
+                var isAdmin = _tokenService.IsUserAdmin(token);
+                ViewBag.IsAdmin = isAdmin;
             }
+            // _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+
+            _httpClient.BaseAddress = new Uri(baseUrl);
+            _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage res = await _httpClient.GetAsync($"{baseUrl}get-range");/*.Result;*/
+            if (res.IsSuccessStatusCode)
+            {
+                var roomRes = res.Content.ReadAsAsync<GenericResponseModel<List<RoomAPIResponseModel>>>().Result;
+                var rooms = roomRes.Data.Select(roomApiResponse => new Room
+                {
+                    Id = roomApiResponse.Id,
+                    Price = roomApiResponse.Price,
+                    RoomNumber = roomApiResponse.RoomNumber,
+                    RoomType = roomApiResponse.RoomType,
+                    Status = roomApiResponse.Status,
+                    ImageBase64 = roomApiResponse.ImageData != null ? Convert.ToBase64String(roomApiResponse.ImageData) : null
+                }).ToList();
+
+                var reponseModel = new GenericResponseModel<List<Room>>()
+                {
+                    Data = rooms,
+                    Message = roomRes.Message,
+                    StatusCode = roomRes.StatusCode
+                };
+
+                return View("~/Views/Room/Rooms.cshtml", reponseModel);
+            }
+            return View();
+
         }
 
         [HttpGet]
-        public async Task<IActionResult> FilterRooms(decimal? minPrice, decimal? maxPrice, string? roomType) 
+        public async Task<IActionResult> FilterRooms(decimal? minPrice, decimal? maxPrice, string? roomType)
         {
             string apiUrl = $"{baseUrl}filter?";
             if (minPrice.HasValue)
             {
                 apiUrl += $"minPrice={minPrice}&";
             }
-            if(maxPrice.HasValue)
+            if (maxPrice.HasValue)
             {
                 apiUrl += $"maxPrice={maxPrice}&";
             }
@@ -49,39 +82,157 @@ namespace HotelClientMVC.Controllers
             }
 
 
-            GenericResponseModel<List<Room>> rooms = new GenericResponseModel<List<Room>>();
-            using(var client = new HttpClient())
+            var token = HttpContext.Session.GetString("AccessToken");
+
+            if (!string.IsNullOrEmpty(token))
             {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage res = await client.GetAsync(apiUrl);
-                if(res.IsSuccessStatusCode)
-                {
-                    var roomRes = res.Content.ReadAsStringAsync().Result;
-                    rooms = JsonConvert.DeserializeObject<GenericResponseModel<List<Room>>>(roomRes);
-                }
+                var isAdmin = _tokenService.IsUserAdmin(token);
+                ViewBag.IsAdmin = isAdmin;
             }
-            return View("~/Views/Room/Rooms.cshtml", rooms);
+
+            _httpClient.BaseAddress = new Uri(baseUrl);
+            _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage res = await _httpClient.GetAsync(apiUrl);
+            if (res.IsSuccessStatusCode)
+            {
+                var roomRes = res.Content.ReadAsAsync<GenericResponseModel<List<RoomAPIResponseModel>>>().Result;
+                var rooms = roomRes.Data.Select(roomApiResponse => new Room
+                {
+                    Id = roomApiResponse.Id,
+                    Price = roomApiResponse.Price,
+                    RoomNumber = roomApiResponse.RoomNumber,
+                    RoomType = roomApiResponse.RoomType,
+                    Status = roomApiResponse.Status,
+                    ImageBase64 = roomApiResponse.ImageData != null ? Convert.ToBase64String(roomApiResponse.ImageData) : null
+                }).ToList();
+
+                var reponseModel = new GenericResponseModel<List<Room>>()
+                {
+                    Data = rooms,
+                    Message = roomRes.Message,
+                    StatusCode = roomRes.StatusCode
+                };
+                return View("~/Views/Room/Rooms.cshtml", reponseModel);
+            }
+            return View();
         }
 
         [HttpGet]
-        public async Task<IActionResult> RoomDetails(string roomId)
+        public async Task<IActionResult> RoomDetails(string roomId)//check availability
         {
             GenericResponseModel<Room> room = null;//todo buna bele null vermek olarmi 
-            using(var client = new HttpClient())
+
+            _httpClient.BaseAddress = new Uri(baseUrl);
+            _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage res = await _httpClient.GetAsync($"{baseUrl}id?id={roomId}");
+            if (res.IsSuccessStatusCode)
             {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage res = await client.GetAsync($"{baseUrl}id?id={roomId}");
-                if(res.IsSuccessStatusCode)
-                {
-                    var roomDetail = res.Content.ReadAsStringAsync().Result;
-                    room = JsonConvert.DeserializeObject<GenericResponseModel<Room>>(roomDetail);
-                }
+                var roomDetail = res.Content.ReadAsStringAsync().Result;
+                room = JsonConvert.DeserializeObject<GenericResponseModel<Room>>(roomDetail);
             }
             return View("~/Views/Room/RoomDetails.cshtml", room);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> UpdateRoom(string roomId)
+        {
+            _httpClient.BaseAddress = new Uri(baseUrl);
+            _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage res = await _httpClient.GetAsync($"id?id={roomId}");
+            if (res.IsSuccessStatusCode)
+            {
+                var room = res.Content.ReadAsAsync<GenericResponseModel<RoomUpdateViewModel>>().Result;
+                return View(room.Data);
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateRoom(RoomUpdateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //_httpClient.BaseAddress = new Uri(baseUrl);
+                //_httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StringContent(model.Id), nameof(model.Id));
+                    content.Add(new StringContent(model.Status), nameof(model.Status));
+                    content.Add(new StringContent(model.RoomNumber), nameof(model.RoomNumber));
+                    content.Add(new StringContent(model.RoomType), nameof(model.RoomType));
+                    content.Add(new StringContent(model.Price.ToString()), nameof(model.Price));
+
+                    if (model.ImageFile != null && model.ImageFile.Length > 0)
+                    {
+                        var stream = model.ImageFile.OpenReadStream();
+                        var fileContent = new StreamContent(stream);
+                        fileContent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data")
+                        {
+                            Name = "image",
+                            FileName = model.ImageFile.FileName
+                        };
+                        content.Add(fileContent);
+                    }
+                    
+                    var accessToken = HttpContext.Session.GetString("AccessToken");
+                    _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+
+                    var response = await _httpClient.PutAsync($"{baseUrl}{model.Id}", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("FilterRooms");
+                    }
+                    ModelState.AddModelError(string.Empty, "An error occurred while updating the room.");
+                }
+            }
+            return View(model);
+        }
+
+
         
+        //todo bunu da duzelt admin ucun 
+        /*[HttpPost]
+        public async Task<IActionResult> CreateRoom(RoomUpdateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //_httpClient.BaseAddress = new Uri(baseUrl);
+                //_httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StringContent(model.Id), nameof(model.Id));
+                    content.Add(new StringContent(model.Status), nameof(model.Status));
+                    content.Add(new StringContent(model.RoomNumber), nameof(model.RoomNumber));
+                    content.Add(new StringContent(model.RoomType), nameof(model.RoomType));
+                    content.Add(new StringContent(model.Price.ToString()), nameof(model.Price));
+
+                    if (model.ImageFile != null && model.ImageFile.Length > 0)
+                    {
+                        var stream = model.ImageFile.OpenReadStream();
+                        var fileContent = new StreamContent(stream);
+                        fileContent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data")
+                        {
+                            Name = "image",
+                            FileName = model.ImageFile.FileName
+                        };
+                        content.Add(fileContent);
+                    }
+                    var token = HttpContext.Session.GetString("AccessToken");
+                    var accessToken = HttpContext.Session.GetString("AccessToken");
+                    _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+
+                    var response = await _httpClient.PutAsync(baseUrl, content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Rooms");
+                    }
+                    ModelState.AddModelError(string.Empty, "An error occurred while updating the room.");
+                }
+            }
+            return View(model);
+        }*/
+
     }
 }

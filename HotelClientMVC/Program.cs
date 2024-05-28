@@ -1,3 +1,5 @@
+using HotelClientMVC.Services;
+
 namespace HotelClientMVC
 {
     public class Program
@@ -14,6 +16,8 @@ namespace HotelClientMVC
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+
+            builder.Services.AddScoped<TokenService>();
             builder.Services.AddHttpClient();
             builder.Services.AddDistributedMemoryCache();
             builder.Services.AddHttpContextAccessor();

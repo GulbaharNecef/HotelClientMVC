@@ -7,6 +7,10 @@
         public string RoomType { get; set; }
         public string Status { get; set; }
         public decimal Price { get; set; }
+		public string ImageBase64 { get; set; } // Base64-encoded image data
+		//public string ImageData { get; set; }//string
+
+
         //public ICollection<ReservationGetDTO>? Reservations { get; set; }// RoomGetDTO includes a nested DTO for Reservation
         //public DateTime CreatedDate { get; set; }
         //public DateTime UpdatedDate { get; set; } //=DateTime.Now

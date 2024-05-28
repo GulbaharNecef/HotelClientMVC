@@ -1,3 +1,12 @@
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.AssemblyInfo.cs
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.RazorAssemblyInfo.cache
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.RazorAssemblyInfo.cs
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.sourcelink.json
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\appsettings.json
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\HotelClientMVC.staticwebassets.runtime.json
@@ -25,6 +34,11 @@ C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Micros
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\microsoft.identitymodel.dll
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -54,6 +68,7 @@ C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -201,14 +216,6 @@ C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\runtim
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.csproj.AssemblyReference.cache
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.AssemblyInfoInputs.cache
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.AssemblyInfo.cs
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.csproj.CoreCompileInputs.cache
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.RazorAssemblyInfo.cache
-C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\HotelClientMVC.RazorAssemblyInfo.cs
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Asus\source\repos\HotelClientMVC\HotelClientMVC\obj\Debug\net8.0\staticwebassets\msbuild.HotelClientMVC.Microsoft.AspNetCore.StaticWebAssets.props

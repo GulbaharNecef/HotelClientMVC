@@ -1,5 +1,7 @@
 ﻿@model GenericResponseModel<List<Room>>
-
+@{
+    var isAdmin = ViewBag.IsAdmin;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,25 +59,32 @@
 <body>
     <h1>Rooms</h1>
     <div class="search">
-        <form asp-action="FilterRooms" method="GET" asp-controller="Room">
-            <label for="minPrice">Minimum Price:</label>
-            <input type="number" id="minPrice" name="minPrice" min="0">
-
-            <label for="maxPrice">Maximum Price:</label>
-            <input type="number" id="maxPrice" name="maxPrice" min="0">
-
-            <label for="roomType">Room Type:</label>
-            <select id="roomType" name="roomType">
-                <option value="">Any</option>
-                <option value="Single">Single</option>
-                <option value="Double">Double</option>
-                <option value="Triple">Triple</option>
-                <option value="Quad">Quad</option>
-                <option value="Queen">Queen</option>
-                <option value="King">King</option>
-            </select>
-
-            <button type="submit">Search</button>
+        <form asp-action="FilterRooms" method="GET" asp-controller="Room" class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="minPrice" class="form-label">Minimum Price:</label>
+                <input type="number" class="form-control" id="minPrice" name="minPrice" min="0">
+            </div>
+            <div class="col-auto">
+                <label for="maxPrice" class="form-label">Maximum Price:</label>
+                <input type="number" class="form-control" id="maxPrice" name="maxPrice" min="0">
+            </div>
+            <div class="col-auto">
+                <label for="roomType" class="form-label">Room Type:</label>
+                <select id="roomType" class="form-select" name="roomType">
+                    <option value="">Any</option>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Quad">Quad</option>
+                    <option value="Queen">Queen</option>
+                    <option value="King">King</option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-info">Search</button>
+            </div>
+            
+            
         </form>
     </div>
     <div class="room-card-container">
@@ -86,12 +95,19 @@
                 @foreach (var room in Model.Data)
                 {
                     <div class="room-card">
-                        <img src="~/images/room.jpeg" class="room-image" alt="Example Room Image">
+                        @if (!string.IsNullOrEmpty(room.ImageBase64))
+                        {
+                            <img src="data:image/jpeg;base64,@room.ImageBase64" alt="Room Image" />
+                        }
                         <div class="room-details">
                             <h2>@room.RoomNumber</h2>
                             <p>Type: @room.RoomType</p>
                             <p>Price: $@room.Price</p>
-                            <button class="btn-primary" value="room.Id" onclick="location.href='@Url.Action("RoomDetails","Room", new{roomId=room.Id})'">Check availability</button>
+                            <button class="btn-info" value="room.Id" onclick="location.href='@Url.Action("RoomDetails","Room", new{roomId=room.Id})'">Check availability</button>
+                            @if (isAdmin != null && isAdmin == true)
+                            {
+                                <button class="btn-info" value="room.Id" onclick="location.href='@Url.Action("UpdateRoom", "Room", new { roomId = room.Id })'">Update Room</button>
+                            }
                         </div>
                     </div>
                 }
