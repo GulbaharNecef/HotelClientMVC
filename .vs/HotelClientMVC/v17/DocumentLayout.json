@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\dtos\\reservationdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\dtos\\reservationdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\reservation\\reserveroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\reservation\\reserveroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\dtos\\reservationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\dtos\\reservationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\room\\roomdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\room\\roomdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\room\\rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\room\\rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,116 +47,8 @@
       "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\room\\updateroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\models\\roomupdateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\models\\roomupdateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\dtos\\reservationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\dtos\\reservationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\services\\concrete\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\services\\concrete\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\hotelclientmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\hotelclientmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\services\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\services\\abstract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\services\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\models\\roomapiresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\models\\roomapiresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\genericresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\genericresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\viewmodels\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\viewmodels\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\viewmodels\\authdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\viewmodels\\authdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\reservation\\tempviewhihi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\reservation\\tempviewhihi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\reservation\\reservationconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\reservation\\reserveroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\reservation\\reserveroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|c:\\users\\asus\\source\\repos\\hotelclientmvc\\hotelclientmvc\\views\\room\\roomdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C7A3607-E9E7-4683-A962-6B6F6C889BF6}|HotelClientMVC\\HotelClientMVC.csproj|solutionrelative:hotelclientmvc\\views\\room\\roomdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,327 +66,148 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Controllers\\RoomController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "HotelClientMVC\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAAJ8AAAAAAAAAAAAhwKkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:23:24.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Models\\Room.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Models\\Room.cs",
-              "RelativeToolTip": "HotelClientMVC\\Models\\Room.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:25:17.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "ReservationCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\DTOs\\ReservationCreateDTO.cs",
               "RelativeDocumentMoniker": "HotelClientMVC\\DTOs\\ReservationCreateDTO.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\DTOs\\ReservationCreateDTO.cs",
               "RelativeToolTip": "HotelClientMVC\\DTOs\\ReservationCreateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T15:13:24.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T19:15:13.348Z",
+              "WhenOpened": "2024-06-20T06:45:59.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "HotelClientMVC\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "DocumentIndex": 2,
+              "Title": "ReservationDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\DTOs\\ReservationDetailsDTO.cs",
+              "RelativeDocumentMoniker": "HotelClientMVC\\DTOs\\ReservationDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\DTOs\\ReservationDetailsDTO.cs",
+              "RelativeToolTip": "HotelClientMVC\\DTOs\\ReservationDetailsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T22:35:20.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomUpdateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Models\\RoomUpdateViewModel.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Models\\RoomUpdateViewModel.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Models\\RoomUpdateViewModel.cs",
-              "RelativeToolTip": "HotelClientMVC\\Models\\RoomUpdateViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T08:24:56.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Rooms.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\Rooms.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Room\\Rooms.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\Rooms.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Room\\Rooms.cshtml",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAG8AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T08:04:15.924Z",
+              "WhenOpened": "2024-06-20T06:44:44.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateRoom.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAA9AAAA",
+              "Title": "ReservationConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "RelativeToolTip": "HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T19:37:00.119Z",
+              "WhenOpened": "2024-06-19T18:04:28.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\UserController.cs",
-              "RelativeToolTip": "HotelClientMVC\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:12:25.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "ReservationController.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\ReservationController.cs",
               "RelativeDocumentMoniker": "HotelClientMVC\\Controllers\\ReservationController.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\ReservationController.cs",
               "RelativeToolTip": "HotelClientMVC\\Controllers\\ReservationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAtwFQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T14:47:45.133Z",
+              "WhenOpened": "2024-06-19T15:19:38.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TokenDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\DTOs\\TokenDTO.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\DTOs\\TokenDTO.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\DTOs\\TokenDTO.cs",
-              "RelativeToolTip": "HotelClientMVC\\DTOs\\TokenDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:18:09.055Z"
+              "DocumentIndex": 10,
+              "Title": "UpdateRoom.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
+              "RelativeToolTip": "HotelClientMVC\\Views\\Room\\UpdateRoom.cshtml",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T18:39:35.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "HotelClientMVC\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAASwKwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:19:38.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
+              "RelativeToolTip": "HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAIUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-17T05:46:50.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "HotelClientMVC\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAADgvxoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T18:11:04.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Program.cs",
               "RelativeDocumentMoniker": "HotelClientMVC\\Program.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Program.cs",
               "RelativeToolTip": "HotelClientMVC\\Program.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwCcAAAAjAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:44:23.402Z"
+              "WhenOpened": "2024-06-20T06:11:20.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\TokenService.cs",
-              "RelativeToolTip": "HotelClientMVC\\Services\\TokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T15:32:07.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\Concrete\\AuthService.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Services\\Concrete\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\Concrete\\AuthService.cs",
-              "RelativeToolTip": "HotelClientMVC\\Services\\Concrete\\AuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:27:39.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HotelClientMVC.csproj",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\HotelClientMVC.csproj",
-              "RelativeDocumentMoniker": "HotelClientMVC\\HotelClientMVC.csproj",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\HotelClientMVC.csproj",
-              "RelativeToolTip": "HotelClientMVC\\HotelClientMVC.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-17T14:52:27.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\Abstract\\IAuthService.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Services\\Abstract\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\Abstract\\IAuthService.cs",
-              "RelativeToolTip": "HotelClientMVC\\Services\\Abstract\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:20:25.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\Abstract\\IUserService.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Services\\Abstract\\IUserService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Services\\Abstract\\IUserService.cs",
-              "RelativeToolTip": "HotelClientMVC\\Services\\Abstract\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:20:30.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAEBVwLsAAAA4AAAA",
+              "DocumentIndex": 3,
+              "Title": "ReserveRoom.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
+              "RelativeToolTip": "HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T08:57:55.629Z"
+              "WhenOpened": "2024-06-19T19:29:21.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GenericResponseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\GenericResponseModel.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\GenericResponseModel.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\GenericResponseModel.cs",
-              "RelativeToolTip": "HotelClientMVC\\GenericResponseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:52:08.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RoomAPIResponseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Models\\RoomAPIResponseModel.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Models\\RoomAPIResponseModel.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Models\\RoomAPIResponseModel.cs",
-              "RelativeToolTip": "HotelClientMVC\\Models\\RoomAPIResponseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T09:46:12.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "app.http",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\app.http",
-              "RelativeDocumentMoniker": "HotelClientMVC\\app.http",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\app.http",
-              "RelativeToolTip": "HotelClientMVC\\app.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-05-18T07:20:57.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "HotelClientMVC\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T19:16:13.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AuthResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\ViewModels\\AuthResponse.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\ViewModels\\AuthResponse.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\ViewModels\\AuthResponse.cs",
-              "RelativeToolTip": "HotelClientMVC\\ViewModels\\AuthResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:06:58.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "Rooms.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\Rooms.cshtml",
+              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Room\\Rooms.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\Rooms.cshtml",
+              "RelativeToolTip": "HotelClientMVC\\Views\\Room\\Rooms.cshtml",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAAAMcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T21:09:49.207Z"
+              "WhenOpened": "2024-06-16T18:47:44.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AuthData.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\ViewModels\\AuthData.cs",
-              "RelativeDocumentMoniker": "HotelClientMVC\\ViewModels\\AuthData.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\ViewModels\\AuthData.cs",
-              "RelativeToolTip": "HotelClientMVC\\ViewModels\\AuthData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:05:01.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Account\\Logout.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Account\\Logout.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Account\\Logout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T19:17:33.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 11,
               "Title": "TempViewHiHI.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\TempViewHiHI.cshtml",
               "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Reservation\\TempViewHiHI.cshtml",
@@ -466,43 +215,7 @@
               "RelativeToolTip": "HotelClientMVC\\Views\\Reservation\\TempViewHiHI.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T17:13:39.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ReservationConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Reservation\\ReservationConfirmation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T15:24:30.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ReserveRoom.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Reservation\\ReserveRoom.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T15:44:48.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RoomDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
-              "RelativeDocumentMoniker": "HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
-              "RelativeToolTip": "HotelClientMVC\\Views\\Room\\RoomDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-16T17:19:47.217Z"
+              "WhenOpened": "2024-06-19T18:04:43.742Z"
             }
           ]
         }

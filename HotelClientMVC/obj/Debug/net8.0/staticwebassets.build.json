@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cpe8B4WbDB3AmDljlofpAOqKxICQuFVt6edkTUSkvTg=",
+  "Hash": "Rch5z3LsMPomMiJywT0N5benacyIShDeYmxJNkxa7Pk=",
   "Source": "HotelClientMVC",
   "BasePath": "_content/HotelClientMVC",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\galerry.jpeg",
+      "SourceId": "HotelClientMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\",
+      "BasePath": "_content/HotelClientMVC",
+      "RelativePath": "images/galerry.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\galerry.jpeg"
     },
     {
       "Identity": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\room.jpeg",

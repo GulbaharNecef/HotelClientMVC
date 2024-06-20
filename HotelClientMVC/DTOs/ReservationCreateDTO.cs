@@ -2,7 +2,8 @@
 {
     public class ReservationCreateDTO
     {
-        public DateTime CheckInDate { get; set; }
+		public string RoomId { get; set; }
+		public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }  
         public string FirstName { get; set; }
         public string LastName { get; set; }

@@ -11,6 +11,9 @@
 <body>
     <h1>Make a Reservation</h1>
     <form asp-action="ReserveRoom" method="post">
+
+        <input type="hidden" name="roomId" value="@ViewBag.RoomId" />
+
         <label for="checkInDate">Check-In Date:</label>
         <input type="date" id="checkInDate" name="CheckInDate" required />
 

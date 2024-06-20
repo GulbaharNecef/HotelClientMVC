@@ -1,57 +1,117 @@
 ﻿@model RoomUpdateViewModel
 @{
-    ViewData["Title"] = "UpdateRoom";
+	ViewData["Title"] = "UpdateRoom";
 }
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Room-update</title>
+	<style>
+		.row {
+			width: 100%;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
 
-<h1>UpdateRoom</h1>
+			.row div {
+				margin: 15px 0;
+			}
 
-<h4>RoomUpdateDTO</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="UpdateRoom" method="post" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="RoomNumber" class="control-label"></label>
-                <input asp-for="RoomNumber" class="form-control" />
-                <span asp-validation-for="RoomNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RoomType" class="control-label"></label>
-                <input asp-for="RoomType" class="form-control" />
-                <span asp-validation-for="RoomType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <!-- <input asp-for="Status" class="form-control" />-->
-                <select asp-for="Status" class="form-select">
-                    <option value="Available">Available</option>
-                    <option value="Reserved">Reserved</option>
-                </select>
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageFile" class="control-label"></label>
-                <input asp-for="ImageFile" class="form-control" type="file" />
-                <span asp-validation-for="ImageFile" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+			.row label {
+				font-weight: bold;
+			}
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+			.row input,
+			.row select {
+				border-radius: 0.25rem;
+			}
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+				.row input:focus,
+				.row select:focus {
+					border-color: #8e44ad;
+					outline: none;
+					box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.7);
+				}
+
+		.btn-primary {
+			background-color: #8e44ad;
+			border-color: #8e44ad;
+			transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+		}
+
+			.btn-primary:hover {
+				background-color: black;
+				border-color: black;
+			}
+
+		.back-to-list {
+			margin-top: 20px;
+		}
+
+			.back-to-list a {
+				color: #8e44ad;
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+				.back-to-list a:hover {
+					text-decoration: underline;
+				}
+	</style>
+</head>
+<body>
+	<h3 style="text-align:center">Update Room</h3>
+	<hr />
+	<div class="row">
+		<div class="col-md-6">
+			<form asp-action="UpdateRoom" method="post" enctype="multipart/form-data">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<input type="hidden" asp-for="Id" />
+				<div class="form-group">
+					<label asp-for="RoomNumber" class="control-label"></label>
+					<input asp-for="RoomNumber" class="form-control" />
+					<span asp-validation-for="RoomNumber" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="RoomType" class="control-label"></label>
+					<input asp-for="RoomType" class="form-control" />
+					<span asp-validation-for="RoomType" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Status" class="control-label"></label>
+					<select asp-for="Status" class="form-select">
+						<option value="Available">Available</option>
+						<option value="Reserved">Reserved</option>
+					</select>
+					<span asp-validation-for="Status" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Price" class="control-label"></label>
+					<input asp-for="Price" class="form-control" />
+					<span asp-validation-for="Price" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="ImageFile" class="control-label"></label>
+					<input asp-for="ImageFile" class="form-control" type="file" />
+					<span asp-validation-for="ImageFile" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Save" class="btn btn-primary" />
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="back-to-list">
+		<a asp-action="Rooms" >Back to List</a>
+	</div>
+
+	@section Scripts {
+		@{
+			await Html.RenderPartialAsync("_ValidationScriptsPartial");
+		}
+	}
+</body>
+</html>
+

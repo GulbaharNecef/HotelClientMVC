@@ -1,126 +1,220 @@
 ﻿@model GenericResponseModel<List<Room>>
 @{
-    var isAdmin = ViewBag.IsAdmin;
+	var isAdmin = ViewBag.IsAdmin;
 }
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Rooms</title>
-    <style>
-		/*body {
-			 background-image: url('images/walpaper.jpg');
-             background-repeat:no-repeat;
-             background-attachment: fixed;
-             background-size: cover;
-             background-position: 50% 50%;
-            backdrop-filter: blur(5px);
-        }*/
-        .room-card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+	<title>Rooms</title>
+	<style>
+		/*form cardlarinin dizayni*/
+		.room-card-container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			padding: 50px 0;
+		}
 
-        .room-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px;
-            width: 300px;
-            max-width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-            background-color: #e7edc5;
-        }
+		.room-card {
+			-ms-flex-preferred-size: calc(33.33333% - 30px);
+			flex-basis: calc(33.33333% - 30px);
+			margin: 0 15px 30px;
+			overflow: hidden;
+			border-radius: 28px;
+			display: block;
+			padding: 30px 20px;
+			background-color: #f2d9fa ;
+			position: relative;
+		}
 
-            .room-card:hover {
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            }
+			.room-card:hover,
+			.room-card:hover .room-details {
+			text-decoration: none;
+			color: #FFF;
+		}
 
-        .room-image {
-            width: 100%;
-            height: auto;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
+			.room-card img, .room-card .room-details, button{
+				z-index:2;
+				overflow: hidden;
+				position: relative;
+			}
 
-        .room-details {
-            padding: 10px;
-        }
+				.room-card:hover:hover .ag-card-item_bg {
+				-webkit-transform: scale(10);
+				-ms-transform: scale(10);
+				transform: scale(10);
+			}
 
-            .room-details h2 {
-                margin-top: 0;
-            }
+		.ag-card-item_bg {
+			height: 128px;
+			width: 128px;
+			background-color: #f9b234;
+			z-index: 1;
+			position: absolute;
+			top: -75px;
+			right: -75px;
+			border-radius: 50%;
+			-webkit-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			transition: all .5s ease;
+		}
 
-            .room-details p {
-                margin-bottom: 5px;
-            }
-    </style>
+		.room-card:nth-child(2n) .ag-card-item_bg {
+			background-color: #3ecd5e;
+		}
+
+		.room-card:nth-child(3n) .ag-card-item_bg {
+			background-color: #e44002;
+		}
+
+		.room-card:nth-child(4n) .ag-card-item_bg {
+			background-color: #952aff;
+		}
+
+		.room-card:nth-child(5n) .ag-card-item_bg {
+			background-color: #cd3e94;
+		}
+
+		.room-card:nth-child(6n) .ag-card-item_bg {
+			background-color: #4c49ea;
+		}
+	
+		/*form kardinin ic elementlerinin dizayni :image */
+		.room-card img{
+			border-radius: 28px;
+		}
+		.room-details{
+            display:flex;
+			flex-wrap: wrap;
+		}
+		.room-details p{
+			font-size:18px;
+			text-align: center;
+			margin:10px 20px;
+		}
+		.room-details button{
+			border-radius:10px;
+			padding:5px;
+			background-color: #8e44ad;
+			color:white;
+			border-style:none;
+			font-size:15px;
+			margin-right:5px;
+		}
+/* Max min qiymet ve select in dizayni*/
+		.styled-input {
+			position: relative;
+			float: left;
+		}
+
+			.styled-input input {
+				transition: all 0.2s ease-in-out;
+			}
+
+				.styled-input input:focus {
+					border-color: #8e44ad;
+					outline: none;
+					box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.7);
+				}
+
+			.styled-input label {
+				position: absolute;
+				top: 50%;
+				left: 10px;
+				transform: translateY(-50%);
+				pointer-events: none;
+				transition: all 0.2s ease-in-out;
+			}
+
+			.styled-input input:focus + label,
+			.styled-input input:not(:placeholder-shown) + label {
+				top: -10px;
+				left: 10px;
+				font-size: 12px;
+				color: #8e44ad;
+			}
+
+
+			.styled-input-rt{
+			position: relative;
+			}
+		.styled-input-rt select:focus {
+			border-color: #8e44ad;
+			outline: none;
+			box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.55);
+		}
+
+	</style>
 </head>
 <body>
-    <h1>Rooms</h1>
-    <div class="search">
-        <form asp-action="FilterRooms" method="GET" asp-controller="Room" class="row g-3 align-items-center">
-            <div class="col-auto">
-                <label for="minPrice" class="form-label">Minimum Price:</label>
-                <input type="number" class="form-control" id="minPrice" name="minPrice" min="0">
-            </div>
-            <div class="col-auto">
-                <label for="maxPrice" class="form-label">Maximum Price:</label>
-                <input type="number" class="form-control" id="maxPrice" name="maxPrice" min="0">
-            </div>
-            <div class="col-auto">
-                <label for="roomType" class="form-label">Room Type:</label>
-                <select id="roomType" class="form-select" name="roomType">
-                    <option value="">Any</option>
-                    <option value="Single">Single</option>
-                    <option value="Double">Double</option>
-                    <option value="Triple">Triple</option>
-                    <option value="Quad">Quad</option>
-                    <option value="Queen">Queen</option>
-                    <option value="King">King</option>
-                </select>
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-info">Search</button>
-            </div>
-            
-            
-        </form>
-    </div>
-    <div class="room-card-container">
-        @if (Model != null)
-        {
-            if (Model.StatusCode == 200 && Model.Data != null && Model.Data.Count > 0)
-            {
-                @foreach (var room in Model.Data)
-                {
-                    <div class="room-card">
-                        @if (!string.IsNullOrEmpty(room.ImageBase64))
-                        {
-                            <img src="data:image/jpeg;base64,@room.ImageBase64" alt="Room Image" />
-                        }
-                        <div class="room-details">
-                            <h2>@room.RoomNumber</h2>
-                            <p>Type: @room.RoomType</p>
-                            <p>Price: $@room.Price</p>
-                            <button class="btn-info" value="room.Id" onclick="location.href='@Url.Action("RoomDetails","Room", new{roomId=room.Id})'">Check availability</button>
-                            @if (isAdmin != null && isAdmin == true)
-                            {
-                                <button class="btn-info" value="room.Id" onclick="location.href='@Url.Action("UpdateRoom", "Room", new { roomId = room.Id })'">Update Room</button>
-                            }
-                        </div>
-                    </div>
-                }
-            }
-            else
-            {
-                <p>@Model.Message</p>
-            }
-        }
-        else
-        {
-            <p>No response received.</p>
-        }
-    </div>
+	<div class="search">
+		<form asp-action="FilterRooms" method="GET" asp-controller="Room" class="row g-3 align-items-center">
+			<div class="col styled-input">
+				<input type="number" class="form-control" id="minPrice" name="minPrice" min="0" placeholder=" ">
+				<label>Min price</label>
+			</div>
+			<div class="col styled-input">
+				<input type="number" class="form-control" id="maxPrice" name="maxPrice" min="0" placeholder=" ">
+				<label>Max price</label>
+			</div>
+			<div class="col-6 styled-input-rt">
+				<select id="roomType" class="form-select" name="roomType">
+					<option value="" disabled selected hidden>Room Type</option>
+					<option value="Single">Single</option>
+					<option value="Double">Double</option>
+					<option value="Triple">Triple</option>
+					<option value="Quad">Quad</option>
+					<option value="Queen">Queen</option>
+					<option value="King">King</option>
+				</select>
+			</div>
+			<div class="col-auto">
+				<button type="submit" class="btn btn-info">Search</button>
+			</div>
+
+
+		</form>
+	</div>
+	<div class="room-card-container">
+		@if (Model != null)
+		{
+			if (Model.StatusCode == 200 && Model.Data != null && Model.Data.Count > 0)
+			{
+				@foreach (var room in Model.Data)
+				{
+					<div class="room-card">
+						<div class="ag-card-item_bg"></div><!--bu o yuxarida daire kimi gorunendi-->
+						@if (!string.IsNullOrEmpty(room.ImageBase64))
+						{
+							<img src="data:image/jpeg;base64,@room.ImageBase64" alt="Room Image" />
+						}
+						<div class="room-details">
+							<p>@room.RoomNumber</p>
+							<p>@room.RoomType</p>
+							<p>$@room.Price</p>
+							<button value="room.Id" onclick="location.href='@Url.Action("RoomDetails","Room", new{roomId=room.Id})'">See availability</button>
+							@if (isAdmin != null && isAdmin == true)
+							{
+								<button value="room.Id" onclick="location.href='@Url.Action("UpdateRoom", "Room", new { roomId = room.Id })'">Update Room</button>
+							}
+						</div>
+					</div>
+				}
+			}
+			else
+			{
+				<p style="color:#8e44ad; margin:20px;">@Model.Message </p>
+			}
+		}
+		else
+		{
+			<p style="color:#8e44ad; margin:20px;">There may be problem with server.😕 Try again in a while.</p>
+		}
+	</div>
 </body>
 </html>

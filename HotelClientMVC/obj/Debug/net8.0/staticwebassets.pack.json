@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\galerry.jpeg",
+      "PackagePath": "staticwebassets\\images\\galerry.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\room.jpeg",
       "PackagePath": "staticwebassets\\images\\room.jpeg"
     },

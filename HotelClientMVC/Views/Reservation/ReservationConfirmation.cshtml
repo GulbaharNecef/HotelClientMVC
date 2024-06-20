@@ -1,5 +1,7 @@
-﻿@model HotelClientMVC.DTOs.ReservationCreateDTO
-
+﻿@model HotelClientMVC.DTOs.ReservationDetailsDTO
+@{
+    ViewBag.Title = "Reservation Confirmation";
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +12,7 @@
 </head>
 <body>
     <h1>Reservation Confirmation</h1>
+    <p>Thank you for your reservation!</p>
     <div>
         <h2>Reservation Successful!</h2>
         <p>Check-In Date: @Model.CheckInDate.ToString("yyyy-MM-dd")</p>
@@ -28,6 +31,6 @@
             <p>Emergency Contact: @Model.EmergencyContact</p>
         }
     </div>
-    <a href="@Url.Action("Room", "Rooms")">Back to Home</a>
+    <a href="@Url.Action("Rooms", "Room")">Back to Home</a>
 </body>
 </html>

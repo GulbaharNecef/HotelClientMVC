@@ -3,253 +3,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Hilton Baku</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HotelClientMVC.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
-    <style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Hilton Baku</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/HotelClientMVC.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+	<style>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body {
-  padding-top:100px;
-  background: #f0faff;
-  padding-bottom:50px;
-}
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 200px;
-  background: #ffcc00;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.nav,
-.nav .nav-links {
-  display: flex;
-  align-items: center;
-}
-.nav {
-  justify-content: space-between;
-}
-a {
-  color: #353842;
-  text-decoration: none;
-}
-.nav .logo {
-  font-size: 22px;
-  font-weight: 500;
-}
-.nav .nav-links {
-  column-gap: 20px;
-  list-style: none;
-}
-.nav .nav-links a {
-  transition: all 0.2s linear;
-}
-.nav.openSearch .nav-links a {
-  opacity: 0;
-  pointer-events: none;
-}
-.nav .search-icon {
-  color: #353842;
-  font-size: 20px;
-  cursor: pointer;
-}
-.nav .search-box {
-  position: absolute;
-  right: 250px;
-  height: 45px;
-  max-width: 555px;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.2s linear;
-}
-.nav.openSearch .search-box {
-  opacity: 1;
-  pointer-events: auto;
-}
-.search-box .search-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  left: 15px;
-  color: #ffcc00;
-  transform: translateY(-50%);
-}
-.search-box input {
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  color: white;
-  border-radius: 6px;
-  background-color: #353842;
-  padding: 0 15px 0 45px;
-}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
 
-.nav .navOpenBtn,
-.nav .navCloseBtn {
-  display: none;
-}
- footer{
-  background-color: #ffcc00;
-       }
+		body {
+			margin-top: 100px;
+			margin-bottom: 50px;
+		}
 
-/* responsive */
-/*
-media screen and (max-width: 1160px) {
-  .nav {
-    padding: 15px 100px;
-  }
-  .nav .search-box {
-    right: 150px;
-  }
-}
-media screen and (max-width: 950px) {
-  .nav {
-    padding: 15px 50px;
-  }
-  .nav .search-box {
-    right: 100px;
-    max-width: 400px;
-  }
-}
-media screen and (max-width: 768px) {
-  .nav .navOpenBtn,
-  .nav .navCloseBtn {
-    display: block;
-  }
-  .nav {
-    padding: 15px 20px;
-  }
-  .nav .nav-links {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    max-width: 280px;
-    width: 100%;
-    padding-top: 100px;
-    row-gap: 30px;
-    flex-direction: column;
-    background-color: #ffcc00;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    z-index: 100;
-  }
-  .nav.openNav .nav-links {
-    left: 0;
-  }
-  .nav .navOpenBtn {
-    color: #353842;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .nav .navCloseBtn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #353842;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .nav .search-box {
-    top: calc(100% + 10px);
-    max-width: calc(100% - 20px);
-    right: 50%;
-    transform: translateX(50%);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-}*/
+		.nav {
+			position: fixed;
+			z-index: 1000;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 15px 200px;
+			background: #8e44ad;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+			.nav, .nav .nav-links {
+				display: flex;
+				align-items: center;
+			}
+
+				.nav .nav-links a,
+				.nav .nav-links a:after,
+				.nav .nav-links a:before{
+					transition: all .5s;
+				}
+
+		.nav {
+			justify-content: space-between;
+		}
+
+		a {
+			color: #353842;
+			text-decoration: none;
+		}
+
+		.nav .logo {
+			font-size: 22px;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			color: #ffffff;
+		}
 
 
-    </style>
+		.nav .nav-links {
+			column-gap: 14px;
+			list-style: none;
+		}
+
+			.nav .nav-links a {
+				color: #ffffff;
+				text-decoration: none;
+				transition: all 0.2s linear;
+				position: relative;
+				z-index: 1;
+				/*text-transform: uppercase;*/
+				padding: 10px;
+				margin: 0 10px;
+			}
+
+				.nav .nav-links a:hover {
+					color: #ffffff;
+				}
+
+					.nav .nav-links a:after{
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					margin: auto;
+					width: 100%;
+					height: 1px;
+					content: '.';
+					color: transparent;
+					background: #dda2f5;
+					visibility: none;
+					opacity: 0;
+					z-index: -1;
+					}
+
+					.nav .nav-links a:hover:after{
+					opacity: 1;
+					visibility: visible;
+					height: 100%;
+					}
+
+		.nav.openSearch .nav-links a {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.nav .search-icon {
+			color: #F5F5DC;
+			font-size: 20px;
+			cursor: pointer;
+		}
+
+		.nav .search-box {
+			position: absolute;
+			right: 250px;
+			height: 45px;
+			max-width: 555px;
+			width: 100%;
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.2s linear;
+		}
+
+		.nav.openSearch .search-box {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.search-box .search-icon {
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			left: 15px;
+			color: #F5F5DC;
+			transform: translateY(-50%);
+		}
+
+		.search-box input {
+			height: 100%;
+			width: 100%;
+			border: none;
+			outline: none;
+			color: white;
+			border-radius: 6px;
+			background-color: #353842;
+			padding: 0 15px 0 45px;
+		}
+
+		.nav .navOpenBtn,
+		.nav .navCloseBtn {
+			display: none;
+		}
+
+		
+
+		footer {
+			background-color: #8e44ad;
+		}
+		footer div{
+			color:white;
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <i class="uil uil-bars navOpenBtn"></i>
-            <a href="#" class="logo">Hilton Baku</a>
+	<header>
+		<nav class="nav shift">
+			<i class="uil uil-bars navOpenBtn"></i>
+			<a href="#" class="logo">Hilton Baku</a>
 
-            <ul class="nav-links">
-                <i class="uil uil-times navCloseBtn"></i>
-                <li><a href="@Url.Action("Rooms", "Room")">Home</a></li>
-                @if( HttpContextAccessor.HttpContext.Session.GetString("AccessToken") == null)
-                {
-                    <li><a href="@Url.Action("Login", "Account")">Login</a></li>
-                }
-                else
-                {
-                    <li>
-                        <form asp-action="Logout" asp-controller="Account" method="post">
-                            <button type="submit">Logout</button>
-                        </form>
-                    </li>
-                    @* <li><a href="@Url.Action("Logout", "Account")"></a></li> *@
-                }
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+			<ul class="nav-links">
+				<i class="uil uil-times navCloseBtn"></i>
+				<li><a href="@Url.Action("Rooms", "Room")">Home</a></li>				
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				@if (HttpContextAccessor.HttpContext.Session.GetString("AccessToken") == null)
+				{
+					<li><a href="@Url.Action("Login", "Account")">Login</a></li>
+				}
+				else
+				{
+					<li>
+						<form asp-action="Logout" asp-controller="Account" method="post" display="inline">
+							@Html.AntiForgeryToken()
+							<button type="submit" style="border:none;background:none;color:white">Logout</button>
+						</form>
+					</li>
+					@* <li><a href="@Url.Action("Logout", "Account")">Logout</a></li> *@
+				}
+			</ul>
 
-            <i class="uil uil-search search-icon" id="searchIcon"></i>
-            <div class="search-box">
-                <i class="uil uil-search search-icon"></i>
-                <input type="text" placeholder="Search here..." />
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+			<i class="uil uil-search search-icon" id="searchIcon"></i>
+			<div class="search-box">
+				<i class="uil uil-search search-icon"></i>
+				<input type="text" placeholder="Search here..." />
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - HotelClientMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        const nav = document.querySelector(".nav"),
-            searchIcon = document.querySelector("#searchIcon"),
-            navOpenBtn = document.querySelector(".navOpenBtn"),
-            navCloseBtn = document.querySelector(".navCloseBtn");
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2024 - HotelClientMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script>
+		const nav = document.querySelector(".nav"),
+			searchIcon = document.querySelector("#searchIcon"),
+			navOpenBtn = document.querySelector(".navOpenBtn"),
+			navCloseBtn = document.querySelector(".navCloseBtn");
 
-        searchIcon.addEventListener("click", () => {
-            nav.classList.toggle("openSearch");
-            nav.classList.remove("openNav");
-            if (nav.classList.contains("openSearch")) {
-                return searchIcon.classList.replace("uil-search", "uil-times");
-            }
-            searchIcon.classList.replace("uil-times", "uil-search");
-        });
+		searchIcon.addEventListener("click", () => {
+			nav.classList.toggle("openSearch");
+			nav.classList.remove("openNav");
+			if (nav.classList.contains("openSearch")) {
+				return searchIcon.classList.replace("uil-search", "uil-times");
+			}
+			searchIcon.classList.replace("uil-times", "uil-search");
+		});
 
-        navOpenBtn.addEventListener("click", () => {
-            nav.classList.add("openNav");
-            nav.classList.remove("openSearch");
-            searchIcon.classList.replace("uil-times", "uil-search");
-        });
-        navCloseBtn.addEventListener("click", () => {
-            nav.classList.remove("openNav");
-        });
+		navOpenBtn.addEventListener("click", () => {
+			nav.classList.add("openNav");
+			nav.classList.remove("openSearch");
+			searchIcon.classList.replace("uil-times", "uil-search");
+		});
+		navCloseBtn.addEventListener("click", () => {
+			nav.classList.remove("openNav");
+		});
 
-    </script>
-    @await RenderSectionAsync("Scripts", required: false)
+	</script>
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

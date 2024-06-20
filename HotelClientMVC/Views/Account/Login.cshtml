@@ -3,20 +3,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+	<title>Login</title>
+	<style>		
+		.login-page {
+			height: 100vh;
+			width: 100%;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			
+		}
+
+		.form {
+			position: relative;
+			filter: drop-shadow(0 0 2px #00000);
+			border-radius: 5px;
+			width: 360px;
+			height: 500px;
+			background-color: #f2d9fa;
+			padding: 40px;
+		}
+
+			.form img {
+				position: absolute;
+				height: 20px;
+				top: 230px;
+				right: 60px;
+				cursor: pointer;
+			}
+
+			.form input {
+				outline: 0;
+				background: #f2f2f2;
+				border-radius: 4px;
+				width: 100%;
+				border: 0;
+				margin: 15px 0;
+				padding: 15px;
+				font-size: 14px;
+			}
+
+				.form input:focus {
+					box-shadow: 0 0 5px 0 rgba(106,98, 210);
+				}
+
+		span {
+			color: red;
+			margin: 10px 0;
+			font-size: 14px;
+		}
+
+		.form button {
+			outline: 0;
+			background: #8e44ad;
+			width: 100%;
+			border: 0;
+			margin-top: 10px;
+			border-radius: 3px;
+			padding: 15px;
+			color: #FFFFFF;
+			font-size: 15px;
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.4s ease-in-out;
+			cursor: pointer;
+		}
+		.form button:hover,
+		.form button:active,
+		.form button:focus{
+			background:black;
+			color:#fff;
+		}
+
+		.message{
+			margin:15px 0;
+			text-align:center;
+		}
+		.form .message a{
+			font-size:14px;
+			color: #8e44ad;
+			text-decoration:none;
+		}
+
+		.input-container {
+			position: relative;
+		}
+
+			.input-container img {
+				position: absolute;
+				height: 20px;
+				top: 50%;
+				right: 15px;
+				transform: translateY(-50%);
+				cursor: pointer;
+				margin-top:10px;
+			}
+		/* Removes the bullet points before errors*/
+		.text-danger ul {
+			list-style-type: none; 
+			font-size:14px;
+			color:#FF0000;
+			padding: 0; 
+			margin: 0; 
+		}
+	</style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form asp-action="Login" method="post">
-        <div>
-            <label for="usernameOrEmail">Username:</label>
-            <input type="text" id="usernameOrEmail" name="usernameOrEmail" required />
-        </div>
-        <div>
-            <label for="Password">Password:</label>
-            <input type="Password" id="Password" name="Password" required />
-        </div>
-        <button type="submit">Login</button>
-    </form>
+	<div class="login-page">
+		<div class="form">
+			<form class="login-form" asp-action="Login" method="post">
+				<h3 style="text-align:center">Login to your account</h3>
+				<div>
+					<label asp-for="usernameOrEmail">Username:</label>
+					<input asp-for="usernameOrEmail" type="text" id="usernameOrEmail" name="usernameOrEmail" required placeholder="Username" />
+				</div>
+				<div class="input-container">
+					<label asp-for="password">Password:</label>
+					<input asp-for="password" type="Password" id="password" name="password" required placeholder="Password" autocomplete="off" oninput="return formvalid()" />
+					<img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png" onclick="show()" id="showimg">
+					<span id="valid-password"></span>
+				</div>
+				<div asp-validation-summary="All" class="text-danger"></div>
+				<button type="submit">Login</button>
+				<p class="message"><a href="#">Forgot your password?</a></p>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		function formvalid() {
+			var vaildpass = document.getElementById("password").value;
+
+			if (vaildpass.length <= 8 || vaildpass.length >= 20) {
+				document.getElementById("valid-password").innerHTML = "Minimum 5 characters";
+				return false;
+			} else {
+				document.getElementById("valid-password").innerHTML = "";
+			}
+		}
+
+		function show() {
+			var x = document.getElementById("password");
+			if (x.type === "password") {
+				x.type = "text";
+				document.getElementById("showimg").src =
+					"https://static.thenounproject.com/png/777494-200.png";
+			} else {
+				x.type = "password";
+				document.getElementById("showimg").src =
+					"https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png";
+			}
+		}
+
+	</script>
 </body>
 </html>
