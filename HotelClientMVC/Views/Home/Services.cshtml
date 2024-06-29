@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Our Services";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hilton Baku</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <style>
+        .services-container {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .services-container h1 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .services-container p {
+                font-size: 1.1em;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .services-container .highlight {
+                font-weight: bold;
+                color: #8e44ad;
+            }
+
+            .services-container .service-list {
+                list-style: none;
+                padding: 0;
+            }
+
+                .services-container .service-list li {
+                    margin-bottom: 20px;
+                }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .service-item img {
+                width: 80px;
+                height: 80px;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+
+            .service-item .service-info {
+                max-width: 800px;
+            }
+
+                .service-item .service-info h3 {
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+
+                .service-item .service-info p {
+                    margin: 5px 0;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="services-container">
+            <h1 style="padding-top:10px;">Our Services</h1>
+            <p>
+                At <span class="highlight">Hilton Baku</span>, we pride ourselves on offering a wide range of services to ensure that your stay is comfortable, enjoyable, and memorable. Whether you are here for business or leisure, our dedicated team is committed to providing you with exceptional service.
+            </p>
+            <ul class="service-list">
+				<li class="service-item">
+                    <img src="~/images/luxury.jpeg" alt="Luxury Rooms and Suites" />
+                    <div class="service-info">
+                        <h3>Luxury Rooms and Suites</h3>
+                        <p>Experience unparalleled comfort in our elegantly designed rooms and suites, equipped with modern amenities to cater to all your needs.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/gourment.jpeg" alt="Gourmet Dining" />
+                    <div class="service-info">
+                        <h3>Gourmet Dining</h3>
+                        <p>Enjoy a diverse culinary experience at our signature restaurants, offering a variety of local and international cuisines.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/fitness.jpeg" alt="Fitness Center and Spa" />
+                    <div class="service-info">
+                        <h3>Fitness Center and Spa</h3>
+                        <p>Stay fit and rejuvenate at our state-of-the-art fitness center and spa, featuring the latest equipment and a range of wellness treatments.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/rooftop.jpeg" alt="Rooftop Bar" />
+                    <div class="service-info">
+                        <h3>Rooftop Bar</h3>
+                        <p>Relax and unwind at our rooftop bar, offering stunning views of the city and the Caspian Sea.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/conference.jpeg" alt="Conference and Event Facilities" />
+                    <div class="service-info">
+                        <h3>Conference and Event Facilities</h3>
+                        <p>Host your meetings and events in our well-equipped conference and event facilities, designed to accommodate all your business needs.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/roomservic.jpeg" alt="24/7 Room Service" />
+                    <div class="service-info">
+                        <h3>24/7 Room Service</h3>
+                        <p>Enjoy the convenience of our 24/7 room service, offering a wide selection of food and beverages delivered right to your room.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/concierge.jpeg" alt="Concierge Services" />
+                    <div class="service-info">
+                        <h3>Concierge Services</h3>
+                        <p>Our knowledgeable concierge team is here to assist you with any requests, from booking tours to arranging transportation.</p>
+                    </div>
+                </li>
+				<li class="service-item">
+                    <img src="~/images/wifi.jpeg" alt="Free High-Speed Wi-Fi" />
+                    <div class="service-info">
+                        <h3>Free High-Speed Wi-Fi</h3>
+                        <p>Stay connected with our complimentary high-speed Wi-Fi, available throughout the hotel.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

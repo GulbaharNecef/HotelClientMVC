@@ -7,14 +7,45 @@
 <head>
     <title>Reservation Confirmation</title>
     <style>
-        /* Add your styles here */
+      
+        .cont {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width:70%;
+            margin:auto;
+            text-align: center;
+        }
+        h2 {
+            color: #8e44ad;
+        }
+
+        .container p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .container a {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8e44ad;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            a:hover {
+                background-color: black;
+            }
     </style>
 </head>
 <body>
-    <h1>Reservation Confirmation</h1>
-    <p>Thank you for your reservation!</p>
-    <div>
+    <div class="container cont">
+
         <h2>Reservation Successful!</h2>
+        <p>Thank you for your reservation!</p>
         <p>Check-In Date: @Model.CheckInDate.ToString("yyyy-MM-dd")</p>
         <p>Check-Out Date: @Model.CheckOutDate.ToString("yyyy-MM-dd")</p>
         <p>Name: @Model.FirstName @Model.LastName</p>
@@ -30,7 +61,7 @@
         {
             <p>Emergency Contact: @Model.EmergencyContact</p>
         }
+        <a href="@Url.Action("Rooms", "Room")">Back to Home</a>
     </div>
-    <a href="@Url.Action("Rooms", "Room")">Back to Home</a>
 </body>
 </html>

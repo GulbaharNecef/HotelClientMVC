@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hilton Baku</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <style>
+        .about-container {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .about-container h1 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .about-container p {
+                font-size: 1.1em;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .about-container .highlight {
+                font-weight: bold;
+                color: #8e44ad;
+            }
+
+            .about-container .services {
+                list-style: none;
+                padding: 0;
+            }
+
+                .about-container .services li {
+                    margin-bottom: 10px;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="about-container">
+            <h1 style="padding-top:10px;">About Hilton Baku</h1>
+            <p>
+                Welcome to <span class="highlight">Hilton Baku</span>, your luxurious home away from home. Situated in the heart of Baku, our hotel offers a perfect blend of comfort, elegance, and modern amenities.
+            </p>
+            <p>
+                Established in 2010, Hilton Baku has been a beacon of hospitality, providing exceptional service to our guests. Our prime location, overlooking the Caspian Sea, ensures that you are always close to the city's most exciting attractions, business centers, and cultural landmarks.
+            </p>
+            <p>
+                Our mission is to offer unparalleled service and create memorable experiences for our guests. Whether you are here for business or leisure, Hilton Baku is dedicated to making your stay as comfortable and enjoyable as possible.
+            </p>
+            <h2>Our Services</h2>
+            <ul class="services">
+                <li>Luxurious Rooms and Suites</li>
+                <li>Gourmet Dining at our Signature Restaurants</li>
+                <li>State-of-the-Art Fitness Center and Spa</li>
+                <li>Rooftop Bar with Stunning Views</li>
+                <li>Conference and Event Facilities</li>
+                <li>24/7 Room Service</li>
+                <li>Concierge Services</li>
+                <li>Free High-Speed Wi-Fi</li>
+            </ul>
+            <p>
+                We look forward to welcoming you to Hilton Baku, where luxury meets convenience.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

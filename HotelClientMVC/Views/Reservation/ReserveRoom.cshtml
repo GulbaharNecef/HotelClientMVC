@@ -5,46 +5,125 @@
 <head>
     <title>Make a Reservation</title>
     <style>
-        /* Add your styles here */
+        .container {
+            width: 70%;
+            margin: auto;
+        }
+
+            .container input, .container textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-top: 30px;
+            }
+
+        button {
+            color: white;
+            background-color: #8a44ad;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+            button:hover {
+                background-color: #6f3085;
+            }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 0px;
+        }
+
+            .form-group label {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: white;
+                padding: 0 5px;
+                color: #aaa;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .form-group input:focus + label,
+            .form-group input:not(:placeholder-shown) + label,
+            .form-group textarea:focus + label,
+            .form-group textarea:not(:placeholder-shown) + label {
+                top: 15px;/*menfi yazdiqca label daha da uzaqlasir input */
+                left: 10px;
+                font-size: 12px;
+                color: #8e44ad;
+            }
+
+            .form-group input:focus,
+            .form-group textarea:focus {
+                border-color: #8e44ad;
+                outline: none;
+                box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+            }
     </style>
 </head>
 <body>
-    <h1>Make a Reservation</h1>
-    <form asp-action="ReserveRoom" method="post">
+    <div class="container">
+        <h3 style="text-align:center; padding-top:15px;">Make a Reservation</h3>
+        <form asp-action="ReserveRoom" method="post">
+            <input type="hidden" name="roomId" value="@ViewBag.RoomId" />
 
-        <input type="hidden" name="roomId" value="@ViewBag.RoomId" />
+            <div class="form-group">
+                <input type="date" id="checkInDate" name="CheckInDate" required placeholder=" " />
+                <label for="checkInDate">Check-In Date:</label>
+            </div>
 
-        <label for="checkInDate">Check-In Date:</label>
-        <input type="date" id="checkInDate" name="CheckInDate" required />
+            <div class="form-group">
+                <input type="date" id="checkOutDate" name="CheckOutDate" required placeholder=" "/>
+                <label for="checkOutDate">Check-Out Date:</label>
+            </div>
 
-        <label for="checkOutDate">Check-Out Date:</label>
-        <input type="date" id="checkOutDate" name="CheckOutDate" required />
-        
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="FirstName" required />
+            <div class="form-group">
+                <input type="text" id="firstName" name="FirstName" required placeholder=" "/>
+                <label for="firstName">First Name:</label>
+            </div>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="LastName" required />
+            <div class="form-group">
+                <input type="text" id="lastName" name="LastName" required placeholder=" "/>
+                <label for="lastName">Last Name:</label>
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="Email" required />
+            <div class="form-group">
+                <input type="email" id="email" name="Email" required placeholder=" "/>
+                <label for="email">Email:</label>
+            </div>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="Phone" required />
+            <div class="form-group">
+                <input type="tel" id="phone" name="Phone" required placeholder=" "/>
+                <label for="phone">Phone:</label>
+            </div>
 
-        <label for="country">Country:</label>
-        <input type="text" id="country" name="Country" required />
+            <div class="form-group">
+                <input type="text" id="country" name="Country" required placeholder=" "/>
+                <label for="country">Country:</label>
+            </div>
 
-        <label for="dateOfBirth">Date of Birth:</label>
-        <input type="date" id="dateOfBirth" name="DateOfBirth" required />
+            <div class="form-group">
+                <input type="date" id="dateOfBirth" name="DateOfBirth" required placeholder=" "/>
+                <label for="dateOfBirth">Date of Birth:</label>
+            </div>
 
-        <label for="specialRequests">Special Requests:</label>
-        <textarea id="specialRequests" name="SpecialRequests"></textarea>
+            <div class="form-group">
+                <textarea id="specialRequests" name="SpecialRequests" placeholder=" "></textarea>
+                <label for="specialRequests">Special Requests:</label>
+            </div>
 
-        <label for="emergencyContact">Emergency Contact:</label>
-        <input type="text" id="emergencyContact" name="EmergencyContact" />
+            <div class="form-group">
+                <input type="text" id="emergencyContact" name="EmergencyContact" placeholder=" "/>
+                <label for="emergencyContact">Emergency Contact:</label>
+            </div>
 
-        <button type="submit">Reserve</button>
-    </form>
+            <button type="submit">Reserve</button>
+        </form>
+    </div>
 </body>
 </html>

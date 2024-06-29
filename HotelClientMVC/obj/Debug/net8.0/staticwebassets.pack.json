@@ -13,16 +13,36 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\galerry.jpeg",
-      "PackagePath": "staticwebassets\\images\\galerry.jpeg"
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\concierge.jpeg",
+      "PackagePath": "staticwebassets\\images\\concierge.jpeg"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\room.jpeg",
-      "PackagePath": "staticwebassets\\images\\room.jpeg"
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\conference.jpeg",
+      "PackagePath": "staticwebassets\\images\\conference.jpeg"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\walpaper.jpg",
-      "PackagePath": "staticwebassets\\images\\walpaper.jpg"
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\fitness.jpeg",
+      "PackagePath": "staticwebassets\\images\\fitness.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\gourment.jpeg",
+      "PackagePath": "staticwebassets\\images\\gourment.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\luxury.jpeg",
+      "PackagePath": "staticwebassets\\images\\luxury.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\rooftop.jpeg",
+      "PackagePath": "staticwebassets\\images\\rooftop.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\roomServic.jpeg",
+      "PackagePath": "staticwebassets\\images\\roomServic.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\images\\wifi.jpeg",
+      "PackagePath": "staticwebassets\\images\\wifi.jpeg"
     },
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\HotelClientMVC\\HotelClientMVC\\wwwroot\\js\\site.js",
